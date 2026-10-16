@@ -34,22 +34,24 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 24px;
+  gap: normal 1%;
   background-color: var(--card-back);
   padding: 16px 32px;
   border-bottom: 1px solid #E2E6DF;
+  margin-left: 20px;
 }
 
 header::before {
-  content: "● Mahlzeit";
+  content: "  ● Mahlzeit";
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
   color: #1C2520;
   margin-right: auto;
-  background: linear-gradient(90deg, var(--button-color) 0 18px, #1C2520 18px);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 header > p {
   margin: 0;
