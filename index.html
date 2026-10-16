@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mahlzeit - die Rezept - App</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+  <p>Entdecken</p>
+  <p>Kategorien</p>
+  <p>Zufallsrezept</p>
+</header>
+<main id="uebersicht">
+<h1>Mahlzeit</h1>
+  <form id="such-form">
+    <input type="text" id="such-input" placeholder="Gericht suchen...">
+    <button id="suchbutton">Suchen</button>
+  </form>
+  <section>
+    <button type="button" id="zufalls-knopf">überrasch mich</button>
+    <div id="kategorie"></div>
+    <h2>Gerichte</h2>
+    <div id="Statusmeldung"></div>
+    <div id="Rezept-Grid"></div>
+    </section>
+</main>
+<section id="Detailansicht" class="hidden">
+  <button id="zurueck">Zurück zur Übersicht</button>
+  <div id="rezept-detail"></div>
+</section>
+<script src="js/app.js"></script>
+<footer>Rezeptdaten von TheMealDB.com</footer>
+</body>
+</html>
