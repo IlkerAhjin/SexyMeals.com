@@ -28,28 +28,68 @@ h1, h2, h3 {
   color: #1C2520;
 }
 
-
-
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--card-back);
-  padding: 16px 16px;
+  padding: 16px 32px;
   border-bottom: 1px solid #E2E6DF;
-  width: 104%;
-  box-sizing: border-box;
-  white-space: wrap;
-  margin-right: 10px  ;
+  flex-wrap: wrap;
 }
 
+#burger-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #1C2520;
+  padding: 4px 8px;
+}
 
-header > p {
+#nav-links {
+  display: flex;
+  gap: 24px;
+}
 
+#nav-links > p {
   margin: 0;
   font-weight: 500;
   color: #4A5550;
   cursor: pointer;
+}
+
+
+@media (max-width: 680px) {
+  header {
+    padding: 14px 20px;
+  }
+
+
+  #burger-btn {
+    display: block;
+  }
+
+  
+  #nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 16px;
+    border-top: 1px solid #E2E6DF;
+    margin-top: 12px;
+  }
+
+  #nav-links.open {
+    display: flex;
+  }
+
+  #nav-links > p {
+    padding: 8px 0;
+    font-size: 1.05rem;
+  }
 }
 
 

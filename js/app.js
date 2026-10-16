@@ -120,6 +120,15 @@ document.getElementById("zufalls-knopf").addEventListener("click", async () => {
   }
 });
 
+const burgerBtn = document.getElementById("burger-btn");
+const navLinks = document.getElementById("nav-links");
+
+if (burgerBtn && navLinks) {
+  burgerBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+  });
+}
+
 const zurueckBtn = document.getElementById("zurueck");
 
 
